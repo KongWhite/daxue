@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Activity from './views/Activity'
+import Detail from './views/Detail'
+import Login from './views/Login'
+import daka from './views/Daka'
 
 Vue.use(Router)
 
@@ -10,16 +14,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'activity',
+      component: Activity
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/daka',
+      name: 'daka',
+      component: daka
+    },
+    {
+      path: '/Detail/:id',
+      name: 'detail',
+      component: Detail
+    },
   ]
 })

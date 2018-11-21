@@ -1,26 +1,5 @@
-# daxue
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+这个测试题大概用了5个小时左右，
+主要是一个页面的跳转和路由的一个传承，
+因为没有接口的调用，我直接用假数据进行一个数据绑定
+登陆功能并没有做验证功能，点击登陆只是单纯的跳转到一个首页，
+点击x是取消

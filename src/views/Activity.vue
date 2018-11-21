@@ -27,11 +27,11 @@
         <ul class="content_list">
           <li v-for="item in activity" :key="item.id" @click="jump('/Detail',item.id)">
             <div class="img_box">
-              <img :src="item.img" alt="">
+              <img src="@/assets/images/01_10.png" alt="">
             </div>
             <div class="msg">
-              <h3>{{item.title}}</h3>
-              <p>{{item.content}}</p>
+              <h3 class="hide">{{item.title}}</h3>
+              <p class="hide">{{item.content}}</p>
             </div>
           </li>
         </ul>
@@ -47,8 +47,8 @@
               <img :src="item.img" alt="">
             </div>
             <div class="msg">
-              <h3>{{item.title}}</h3>
-              <p>{{item.content}}</p>
+              <h3 class="hide">{{item.title}}</h3>
+              <p class="hide">{{item.content}}</p>
             </div>
           </li>
         </ul>
@@ -163,6 +163,12 @@ a{
 .msg p{
   margin-top:0.8rem;
   color:#999999;
+}
+.hide{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 </style>
 
